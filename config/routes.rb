@@ -1,4 +1,8 @@
 Vimwizard::Application.routes.draw do
+  resources :vim_configs
+  root :to => "vim_configs#index"
+  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
